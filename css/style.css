@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+.font{
+    font-family: 'Kanit', sans-serif;
+}
+
+.font-header{
+    src: url("../font/library_3_am/Library3am.otf");
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.bg-work{
+    /* The image used */
+    background-image: url("../img/background.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-description {
+    margin: auto;
+    width: 30%;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #ffada8;
+    -webkit-transition: 200ms ease-in-out;
+        -o-transition: 200ms ease-in-out;
+        transition: 200ms ease-in-out;
+        -webkit-box-shadow: 0 0 15px rgba(255,255,255,0.3);
+                box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+.box-description:hover {
+    -webkit-box-shadow: 0 0 5px rgba(192,215,234,0.7);
+            box-shadow: 0 0 5px rgba(192,215,234,0.7);
+}
