@@ -2,16 +2,21 @@
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 
-.font{
-    font-family: 'Kanit', sans-serif;
+body {
+    font-family: 'Kanit', sans-serif !important;
 }
 
-.font-header{
-    src: url("../font/library_3_am/Library3am.otf");
+.font-header {
     font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
 }
 
-.bg-work{
+.text-header {
+    font-size: 100px;
+    color: white;
+}
+
+.bg-work {
     /* The image used */
     background-image: url("../img/background.jpg");
 
@@ -22,13 +27,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .box-description {
     margin: auto;
     width: 30%;
+    font-size: 30px;
     border-radius: 3px;
-    padding: 10px;
     background-color: #ffada8;
     -webkit-transition: 200ms ease-in-out;
         -o-transition: 200ms ease-in-out;
@@ -40,4 +46,56 @@
 .box-description:hover {
     -webkit-box-shadow: 0 0 5px rgba(192,215,234,0.7);
             box-shadow: 0 0 5px rgba(192,215,234,0.7);
+}
+
+.w {
+    width: 30%;
+    margin: auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* I PAD */
+@media screen and (max-width : 1336px) and (min-width : 1024px) {
+    .w {
+        width: 30% !important;
+        margin: auto;
+    }
+
+    .box-description {
+        width: 80% !important;
+        padding: auto;
+        font-size: 40px !important;
+    }
+}
+
+/* 6s */
+@media only screen 
+  and (min-width: 414px) 
+  and (max-width: 736px) { 
+    .w {
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .box-description {
+        width: 80% !important;
+        padding: auto;
+        font-size: 40px !important;
+    }
+}
+
+/* X */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3){
+    .w {
+        width: 100% !important;
+        margin: auto;
+    }
 }
