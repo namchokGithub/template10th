@@ -61,6 +61,25 @@
 }
 
 
-@media screen and (min-width: 1024px) {
+/* I PAD */
+@media screen and (max-width : 1336px) and (min-width : 1024px) {
+    
+}
 
+/* 6s */
+@media only screen 
+  and (min-width: 414px) 
+  and (max-width: 736px) { 
+    
+}
+
+/* X */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3){
+    .card-pink{
+		font-size: 100px !important;
+		height: 400px;
+	}
 }
